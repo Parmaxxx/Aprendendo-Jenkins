@@ -4,14 +4,14 @@ pipeline{
     stages{
         stage('Instalar Dependências'){
             steps{
-                scripts{
+                script{
                     bat 'npm install'
                 }
             }
         }
         stage('Executar testes'){
             steps{
-                scripts{
+                script{
                     bat 'npm test'
                 }
             }
