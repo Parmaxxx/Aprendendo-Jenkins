@@ -9,7 +9,7 @@ pipeline{
                 }
             }
         }
-        stages('Executar testes'){
+        stage('Executar testes'){
             steps{
                 scripts{
                     bat 'npm test'
